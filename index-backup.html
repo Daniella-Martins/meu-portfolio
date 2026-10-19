@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meu Portfólio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Olá, eu sou Daniella Martins!</h1>
+		<p>Desenvolvedora Front-end em formação | Programa Trilhas</p>
+		
+	</header>
+	<nav class="botoes">
+  <a href="#sobre">Sobre mim</a>
+  <a href="#projetos">Meus projetos</a>
+  <a href="https://drive.google.com/drive/folders/1xgBI6_mlBIVLWd5m3Jln-GwnwefFMMS-?usp=sharing">Meus certificados</a>
+</nav>
+
+	<main>
+		<section id="sobre" hidden>
+    <h2>Sobre mim</h2>
+    <p>
+        Olá! Sou Daniella Martins, estudante de desenvolvimento
+        Front-end pelo Programa Trilhas Inova Maranhão.
+        Estou aprendendo a criar páginas web e desenvolvendo
+        minhas habilidades em HTML, CSS e JavaScript.
+    </p>
+</section>
+
+		<section id="projetos" hidden>
+    <h2>Meus projetos</h2>
+
+    <div class="projeto">
+        <h3>Meu portfólio pessoal</h3>
+        <p>
+            <a href="https://github.com/Daniella-Martins/meu-portfolio"target="_blank" rel="noopener noreferrer" class="botao">Ver projeto no GitHub</a>
+            <div>
+            Este é meu primeiro projeto de desenvolvimento web,
+            criado com HTML e CSS durante meus estudos no
+            Programa Trilhas Inova Maranhão.
+        </p>
+
+    </div>
+</section>
+
+		<section id="certificados">
+            <h2>Meus certificados</h2>
+    <p>
+        Sou estudante de desenvolvimento Front-end
+        pelo Programa Trilhas Inova Maranhão 3a edição e estou aprendendo
+        a criar páginas web com HTML e CSS.
+   </p>
+   <a href="https://drive.google.com/drive/folders/1xgBI6_mlBIVLWd5m3Jln-GwnwefFMMS-?usp=sharing" class="botao" target="_blank" rel="noopener noreferrer">Ver meus certificados</a>
+         </section>
+	</main>
+
+	<footer>
+		<p>Desenvolvido por Daniella Martins</p>
+	</footer>
+<script>
+const botaoSobre = document.querySelector('a[href="#sobre"]');
+const secaoSobre = document.getElementById('sobre');
+
+botaoSobre.addEventListener('click', function(event) {
+    event.preventDefault();
+    secaoSobre.hidden = !secaoSobre.hidden;
+});
+const botaoProjetos = document.querySelector('a[href="#projetos"]');
+const secaoProjetos = document.getElementById("projetos");
+
+botaoProjetos.addEventListener("click", function(event) {
+    event.preventDefault();
+    secaoProjetos.hidden = !secaoProjetos.hidden;
+});
+</script>
+</html>
+
+</body>

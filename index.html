@@ -15,11 +15,11 @@
 	<nav class="botoes">
   <a href="#sobre">Sobre mim</a>
   <a href="#projetos">Meus projetos</a>
-  <a href="#formacao">Minha formação</a>
+  <a href="https://drive.google.com/drive/folders/1xgBI6_mlBIVLWd5m3Jln-GwnwefFMMS-?usp=sharing">Meus certificados</a>
 </nav>
 
 	<main>
-		<section id="sobre">
+		<section id="sobre" hidden>
     <h2>Sobre mim</h2>
     <p>
         Olá! Sou Daniella Martins, estudante de desenvolvimento
@@ -29,13 +29,13 @@
     </p>
 </section>
 
-		<section id="projetos">
+		<section id="projetos" hidden>
     <h2>Meus projetos</h2>
 
     <div class="projeto">
         <h3>Meu portfólio pessoal</h3>
         <p>
-            <a href="https://github.com/https://daniella-martins.github.io/meu-portfolio/" target="_blank" rel="noopener noreferrer" class="botao">Ver projeto no GitHub</a>
+            <a href="https://github.com/Daniella-Martins/meu-portfolio"target="_blank" rel="noopener noreferrer" class="botao">Ver projeto no GitHub</a>
             <div>
             Este é meu primeiro projeto de desenvolvimento web,
             criado com HTML e CSS durante meus estudos no
@@ -45,18 +45,43 @@
     </div>
 </section>
 
-		<section id="formacao">
-            <h2>Minha formação</h2>
+		<section id="certificados" hidden>
+            <h2>Meus certificados</h2>
     <p>
         Sou estudante de desenvolvimento Front-end
         pelo Programa Trilhas Inova Maranhão 3a edição e estou aprendendo
         a criar páginas web com HTML e CSS.
    </p>
+   <a href="https://drive.google.com/drive/folders/1xgBI6_mlBIVLWd5m3Jln-GwnwefFMMS-?usp=sharing" class="botao" target="_blank" rel="noopener noreferrer">Ver meus certificados</a>
          </section>
 	</main>
 
 	<footer>
 		<p>Desenvolvido por Daniella Martins</p>
 	</footer>
-</body>
+<script>
+const botaoSobre = document.querySelector('a[href="#sobre"]');
+const secaoSobre = document.getElementById('sobre');
+
+botaoSobre.addEventListener('click', function(event) {
+    event.preventDefault();
+    secaoSobre.hidden = !secaoSobre.hidden;
+});
+const botaoProjetos = document.querySelector('a[href="#projetos"]');
+const secaoProjetos = document.getElementById("projetos");
+
+botaoProjetos.addEventListener("click", function(event) {
+    event.preventDefault();
+    secaoProjetos.hidden = !secaoProjetos.hidden;
+});
+const botaoCertificados = document.querySelector('a[href="#certificados"]');
+const secaoCertificados = document.getElementById("certificados");
+
+botaoCertificados.addEventListener("click", function(event) {
+    event.preventDefault();
+    secaoCertificados.hidden = !secaoCertificados.hidden;
+});
+</script>
 </html>
+
+</body>
