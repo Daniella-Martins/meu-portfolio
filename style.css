@@ -52,3 +52,26 @@ footer {
 	text-align: center;
 	padding: 20px;
 }
+
+
+/* Botões de navegação */
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.botoes a {
+  background-color: #6c4ab6;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.botoes a:hover {
+  background-color: #4e328a;
+}
