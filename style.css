@@ -75,3 +75,6 @@ footer {
 .botoes a:hover {
   background-color: #4e328a;
 }
+[hidden] {
+    display: none !important;
+}
