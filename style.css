@@ -95,3 +95,19 @@ header img {
     display: block;
     margin: 0 auto 15px;
 }
+
+.projeto button {
+    background-color: #5b5b91;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.projeto button:hover {
+    background-color: #41416f;
+}
