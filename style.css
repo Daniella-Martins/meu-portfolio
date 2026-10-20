@@ -78,3 +78,11 @@ footer {
 [hidden] {
     display: none !important;
 }
+header img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
